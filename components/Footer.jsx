@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 const Footer = () => {
   return (
-    <div className="h-16*- Fcenter border-t border-black/30">
+    <div className="h-16 Fcenter border-t border-black/30 mt-10">
       <div className="Container h-full FCenter">
         <motion.a
           initial={{ scale: 1 }}
