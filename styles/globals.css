@@ -1,9 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 a {
@@ -15,12 +18,42 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+.Container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+.FCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  @apply font-semibold;
+}
+h1 {
+  @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl;
+}
+h2 {
+  @apply text-3xl md:text-4xl lg:text-5xl;
+}
+h3 {
+  @apply text-2xl md:text-3xl lg:text-4xl;
+}
+h4 {
+  @apply text-xl lg:text-2xl;
+}
+
+li {
+  @apply cursor-pointer;
+}
+
+p {
+  @apply text-sm md:text-base leading-5 tracking-widest md:tracking-wider lg:tracking-wide;
 }
